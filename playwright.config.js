@@ -16,10 +16,11 @@ module.exports = defineConfig({
     viewport: null, // Let the page be maximized
     launchOptions: {
       headless: false, // Run tests in headful mode
-      args: ['--start-maximized'] // Start browser in maximized mode
+      args: ['--start-maximized'], // Start browser in maximized mode
+      slowMo:50
     },
     screenshot: 'on', // Capture screenshots on failure
-    video:'on' 
+    video:'on'
   },
 
   projects: [
