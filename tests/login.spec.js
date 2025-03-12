@@ -42,7 +42,7 @@ test('Task', async ({ page }) => {
   await loginPage.clickFish();
   await loginPage.clickAngelFish();
   await loginPage.clickOnAddToCartButton();
-  await page.waitForTimeout(2000);
+  await page.waitForTimeout(1000);
   await loginPage.verifyCartPage();
 
 });
