@@ -9,7 +9,7 @@ module.exports = defineConfig({
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 2 : 0,
   workers: process.env.CI ? 1 : undefined,
-  reporter: 'html',
+  reporter: [['html', { outputFolder: 'playwright-report' }]],
   use: {
     baseURL: 'https://petstore.octoperf.com',
     trace: 'on-first-retry',
@@ -18,7 +18,8 @@ module.exports = defineConfig({
       headless: false, // Run tests in headful mode
       args: ['--start-maximized'] // Start browser in maximized mode
     },
-    screenshot: 'only-on-failure', // Capture screenshots on failure
+    screenshot: 'on', // Capture screenshots on failure
+    video:'on' 
   },
 
   projects: [
