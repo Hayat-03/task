@@ -1,0 +1,17 @@
+{
+    "userID":"alpha",
+    "password":"Password@1",
+    "firstName":"Jhon",
+    "lastName":"Etkin",
+    "email":"jhon@email.com",
+    "phone":"2045067449",
+    "address1":"13 Washington Square S",
+    "address2":"apt 36",
+    "city":"New York",
+    "state":"NY",
+    "zip":"10012",
+    "country":"USA"
+
+}
+
+   
