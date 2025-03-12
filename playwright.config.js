@@ -15,6 +15,7 @@ module.exports = defineConfig({
     trace: 'on-first-retry',
     viewport: null, // Let the page be maximized
     launchOptions: {
+      headless: false, // Run tests in headful mode
       args: ['--start-maximized'] // Start browser in maximized mode
     },
     screenshot: 'only-on-failure', // Capture screenshots on failure
