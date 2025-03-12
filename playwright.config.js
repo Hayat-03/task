@@ -3,8 +3,8 @@ const { defineConfig, devices } = require('@playwright/test');
 
 module.exports = defineConfig({
   timeout: 60000,
-  //testDir: '../tests',
-  testMatch:'../tests/login.spec.js',
+  testDir: './tests',
+  //testMatch:'../tests/login.spec.js',
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 2 : 0,
