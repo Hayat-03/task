@@ -43,6 +43,7 @@ test('Task', async ({ page }) => {
   await loginPage.clickAngelFish();
   await loginPage.clickOnAddToCartButton();
   await page.waitForTimeout(1000);
+  //Hayat
   await loginPage.verifyCartPage();
 
 });
